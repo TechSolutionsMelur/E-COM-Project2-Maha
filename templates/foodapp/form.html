@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/appstyling/foodapp.css' %}">
+    <style>
+      body{
+        background-color: white;
+      }
+    </style>
+</head>
+<body>
+  <div class="form-head">
+     <div class="back"><button><a href="{% url 'home' %}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+</svg> Back </a></button></div>
+     <div><h1 class="addfood">Add Your Food Details</h1></div>
+  </div>
+  
+  <div class="line"></div>
+  <div class="form-container">
+    <!-- form box -->
+    <div class="formbox">
+      <p>Add delicious food details with <br>name,price and image</p>
+     <form method="post" enctype = "multipart/form-data">
+     {% csrf_token %}
+     <div>
+      
+     <input type="text" name="foodname" placeholder="Enter the food Name">
+     </div>
+     
+     <div>
+      
+     <input  type="number" name="amount"  placeholder="Enter the food Amount">
+     </div>
+    
+     <div>
+       
+       <input type="file" name="photo" class="photo">
+       </div>
+     
+      <button type="submit">Save</button>
+   
+     </form>
+    </div>
+    
+    <!-- image box -->
+    <div>
+      <img src="{% static 'images/pexels-rachel-claire-5490966.jpg' %}" alt="" class="imagebox">
+    </div>
+    
+  </div>
+</body>
+</html> 

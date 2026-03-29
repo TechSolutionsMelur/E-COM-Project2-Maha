@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static '/appstyling/foodapp.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <nav class="navbar">
+        <h4 class="logo">.FOODAPP.</h4>
+    <ul class="nav-pills nav-items">
+
+      <div class="navbar-container">
+        <div class="navbar-center">
+          
+        <div>
+          <li class="nav-item">
+          <a class="nav-link" href="#home">HOME</a>
+          </li>
+        </div>
+
+        <div>
+           <li class="nav-item">
+             <a class="nav-link" href="{% url 'form' %}">ADD FOOD</a>
+            </li>
+        </div>
+        <div>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'viewfood' %}">VIEW FOOD</a>
+          </li>
+        </div>
+      </div>
+
+      <div class="navbar-corner">
+         <div>
+        <li class="nav-item">
+        <a class="nav-link link" href="#">LINK</a>
+        </li>
+      </div>
+      <div>
+        <li class="nav-item">
+       <a class="nav-link" href="#">LINK</a>
+        </li>
+      </div>
+    </div>
+      </div>
+      
+      
+</ul>
+</nav>
+    </div>
+</header>
+</body>
+</html>

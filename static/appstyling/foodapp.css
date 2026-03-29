@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.bcd{
+    background: url("../images/pexels-ella-olsson-572949-1640773.jpg");
+    height: 80vh;
+    width: 100%;
+    padding-top: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    
+    border-radius: 30px;
+}
+
+.bcd::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(86, 10, 134, 0.5);
+      border-radius: 30px;
+}
+.navbar-container{
+    display: flex;
+}
+.navbar-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 380px;
+}
+
+.navbar-corner{
+    display: flex;
+    margin-right: 50px;
+}
+ 
+.logo{
+    color: rgb(118, 57, 176);
+    margin-left: 30px;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-center li{
+    margin-left: 20px;
+}
+
+.navbar-center a:hover{
+    color: rgb(228, 182, 241);
+    
+}
+.navbar-center a{
+    font-size: large;
+    font-weight: 800px;
+    color: rgb(118, 57, 176);
+    
+}
+
+
+.navbar-corner li{
+    margin-left: 20px;
+}
+
+.navbar-corner a:hover{
+    color: rgb(228, 182, 241);
+    
+}
+.navbar-corner a{
+    font-size: large;
+    font-weight: 800px;
+    color: rgb(118, 57, 176);
+    
+}
+.quates1{
+    position: relative;
+    color: white;
+    text-align: start;
+    font-size: 60px;
+    margin: 30px 80px;
+    margin-top: 130px;
+    
+}
+.quates2{
+    position: relative;
+    color: white;
+    margin: 30px 80px;
+    
+}
+.row{
+    gap:30px;
+}
+.form-container{
+    height: 500px;
+    width: 1000px;
+    background-color: rgba(86, 10, 134, 0.5);
+    margin: 70px auto;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-container input{
+    width: 280px;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: rgba(86, 10, 134, 0.5);
+}
+.form-container button{
+    width: 100px;
+    padding: 10px;
+    background: white;
+    color: rgb(102, 26, 173);
+    border: none;
+    margin: 2px 2px 2px 2px;
+    border-radius: 5px;
+    margin-left:70px;
+    font-size: large;
+    
+}
+.imagebox{
+    height: 400px;
+    width: 500px;
+}
+.formbox p{
+   text-align: center;
+   margin-bottom: 50px;
+   font-size: x-large;
+   color: white;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(102, 26, 173);
+    margin-top: 20px;
+}
+.form-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.back{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.back a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+}
+
+.addfood{
+    color: rgb(140, 55, 174);
+    align-items: center;
+    margin-right:600px;
+    margin-top: 10px;
+}
+.food-card {
+    width: 100%;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px white;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(172, 118, 222);
+    margin-left: 13px;
+}
+.food-card:hover{
+    transform: scale(1.03);
+}
+.card-img-top{
+    width: 268px;
+    height: 170px;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+.card-body .btn{
+   background-color: white;
+    color: rgb(118, 57, 176);
+    width: 40%;
+    height: 35px;
+    border-radius: 5px;
+    border: solid white;
+    font-size: large;
+    text-align: center;
+    font-weight: 400px;
+}
+.row{
+    margin-top: 20px;
+}
+.card-title{
+    color: white;
+}
+.card-body a{
+    color: white;
+}
+.card-body h5{
+    color: white;
+}
+.del{
+    margin-top: 10px;
+    background-color: white;
+    color: rgb(118, 57, 176);
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: solid white;
+    font-size: large;
+    text-align: center;
+    font-weight: 400px;
+}
+.nav-link svg{
+   height: 35px;
+   width: 35px;
+}
+/* .drow-line{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+} */
+
+.form-head button{
+    color: white;
+    background-color: rgba(86, 10, 134, 0.5);
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    height: 50px;
+    width: 120px;
+
+}
+.form-head svg{
+    height: 20px;
+    width: 25px;
+    color: white;
+    align-items: center;
+}
+.form-head a:hover{
+    color: rgb(59, 35, 79);
+}
+.card-title svg{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+.amount svg{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+
+.items-scroll{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.items-scroll img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.items-scroll svg{
+    height: 50px;
+    width: 50px;
+    color: rgba(86, 10, 134, 0.5);
+}
+.explore-head p{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(118, 57, 176);
+}
+
