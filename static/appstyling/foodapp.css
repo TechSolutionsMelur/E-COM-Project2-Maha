@@ -68,9 +68,8 @@
 }
 .navbar-center a{
     font-size: large;
-    font-weight: 800px;
+    font-weight: bolder;
     color: rgb(118, 57, 176);
-    
 }
 
 
@@ -162,16 +161,90 @@
     justify-content: space-between;
     padding: 5px;
 }
-.back{
-  margin-top: 10px;
-  margin-left: 5px;
-}
-.back a{
-    text-decoration: none;
-    font-size: x-large;
-    color: white;
+/* food heading style */
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
 }
 
+/* LEFT */
+.back-button {
+    flex: 1;
+}
+
+/* CENTER */
+.explore-head {
+    flex: 1;
+    text-align: center;
+}
+.explore-head p{
+    color: rgb(140, 55, 174);
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/* RIGHT */
+.addfood-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+
+.cart-icon {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(140, 55, 174);
+    border-radius: 100%;
+    text-align: center;
+}
+.cart-icon svg{
+   height: 20px;
+   width: 20px;
+   color: white;
+   margin-top: 5px;
+}
+.heart-icon{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(140, 55, 174);
+    border-radius: 100%;
+    text-align: center;
+}
+.heart-icon svg{
+    height: 20px;
+    width: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Button styles */
+.back button {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(140, 55, 174);
+    border: solid white;
+    border-radius: 7px;
+    font-size: large;
+}
+
+.btn {
+    height: 40px;
+    width: 130px;
+    background-color: rgb(140, 55, 174);
+    color: white;
+    font-size: large;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
 .addfood{
     color: rgb(140, 55, 174);
     align-items: center;
@@ -291,12 +364,7 @@
     width: 50px;
     color: rgba(86, 10, 134, 0.5);
 }
-.explore-head p{
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    color: rgb(118, 57, 176);
-}
+
 
 .restaurant-view{
     display: flex;
@@ -305,8 +373,8 @@
 }
 .form-btn button{
     background-color: rgb(118, 57, 176);
-    height: 50px;
-    width: 160px;
+    height: 40px;
+    width: 100px;
     border: solid white;
     border-radius: 10px;
     font-weight: bold;
@@ -320,6 +388,9 @@
 .form-btn button:hover{
    background-color: blueviolet;
 }
+.corner-res{
+    display: flex;
+}
 
 .search input{
       height: 40px;
@@ -328,17 +399,20 @@
       border-radius: 10px;
       width: 250px;
       color: rgb(118, 57, 176);
+      font-size: large;
 }
-.search button{
-    background-color: white;
-    border: 2px solid rgb(118, 57, 176);
-    width: 60px;
-    border-radius: 10px;
+.search svg{
     color: rgb(118, 57, 176);
-    font-weight: bold;
-    font-size: large;
+    height: 20px;
+    width: 30px;
+}
+.search svg:hover{
+    transform: scale(1.03);
 }
 
+.heading{
+    text-align: center;
+}
 .heading h1{
     color: rgb(118, 57, 176);
 }
@@ -352,10 +426,95 @@
     font-size: large;
     color: white;
 }
-.search{
-    padding: 10px;
-}
 .cartlist{
     display: flex;
     padding: 10px;
 }
+
+/* it is restaurant style */
+
+.res-card {
+    width: 150px;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px white;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(172, 118, 222);
+    margin-left: 13px;
+}
+.res-card:hover{
+    transform: scale(1.03);
+}
+.card-image-top{
+    width: 260px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+   
+    
+}
+.res-card .btn{
+   background-color: white;
+    color: rgb(118, 57, 176);
+    width: 40%;
+    height: 35px;
+    border-radius: 5px;
+    border: solid white;
+    font-size: large;
+    text-align: center;
+    font-weight: 400px;
+}
+.row{
+    margin-top: 20px;
+}
+.res-title{
+    color: white;
+}
+.res-body a{
+    color: white;
+}
+.res-body h5{
+    color: white;
+    text-align: center;
+}
+.res-body h3{
+    text-align: center;
+}
+.view-btn button{
+     height: 40px;
+     width: 130px;
+     background-color: white;
+     border-radius: 7px;
+     color: rgb(118, 57, 176);
+     font-size: large;
+     text-align: center;
+     border: solid white;
+}
+.view-btn button:hover{
+    background-color: rgb(216, 184, 247);
+}
+
+
+
+
+/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg>
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+</svg>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg> */
